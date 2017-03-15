@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Game Finder</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script defer type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <header class="container">
+        <img class="center-block logo" src="gamefinder.png">
+        <div class="btn-group text-center col-xs-12">
+            <a href="https://store.playstation.com/#!/en-us/home/main" class="btn-primary btn-large"> Playstation Store</a></li>
+            <a href="http://www.xbox.com/en-US/games/xbox-one" class="btn-primary btn-large">Xbox Marketplace</a>
+            <a href="https://store.nintendo.com/ng3/" class="btn-primary btn-large">Nintendo Store</a>
+            <a href="http://store.steampowered.com/" class="btn-primary btn-large">Steam</a>
+            <a href="https://www.twitch.tv/" class="btn-primary btn-large">Twitch</a>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="page-heading">
+                    <h5 class="text-center">Enter your search criteria Here:</h5>
+                    <div class="input col-xs-12">
+                        <form class="search">
+                            <input type="text" class="form-control">
+                            <button type="search" id="search-it-brah" class="btn-primary">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="game-container col-xs-12">
+                <div class="row">
+                    <div class="game-results hidden">
+                        <div class="image col-xs-3">
+                            <img id="0" src="http://placehold.it/300?">
+                            <h6 class="game-return"></h6>
+                        </div>
+                    </div>
+                    <div class="game-results hidden col-xs-3">
+                        <div class="game-image">
+                            <img id="1" class="no-resize" src="http://placehold.it/300?">
+                            <h6 class="game-return"></h6>
+                        </div>
+                    </div>
+                    <div class="game-results hidden col-xs-3">
+                        <div class="game-image">
+                            <img id="2" class="no-resize" src="http://placehold.it/300?">
+                            <h6 class="game-return"></h6>
+                        </div>
+                    </div>
+                    <div class="game-results hidden col-xs-3">
+                        <div class="game-image">
+                            <img id="3" class="no-resize" src="http://placehold.it/300?">
+                            <h6 class="game-return"></h6>
+                        </div>
+                    </div>
+                    <div class="game-results hidden col-xs-3">
+                        <div class="game-image">
+                            <img id="4" class="no-resize" src="http://placehold.it/300?">
+                            <h6 class="game-return"> </h6>
+                        </div>
+                    </div>
+                    <div class="game-results hidden col-xs-3">
+                        <div class="game-image">
+                            <img id="5" class="no-resize" src="http://placehold.it/300?">
+                            <h6 class="game-return"> </h6>
+                        </div>
+                    </div>
+                    <div class="game-results hidden col-xs-3">
+                        <div class="game-image">
+                            <img id="6" class="no-resize" src="http://placehold.it/300?">
+                            <h6 class="game-return"></h6>
+                        </div>
+                    </div>
+                    <div class="game-results hidden col-xs-3">
+                        <div class="game-image">
+                            <img id="7" class="no-resize" src="http://placehold.it/300?">
+                            <h6 class="game-return"></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+
+</html>

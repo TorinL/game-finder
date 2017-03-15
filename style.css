@@ -1,0 +1,62 @@
+
+.main-header {
+  text-align: center;
+}
+
+.logo {
+  width: 300px;
+}
+
+.game-container {
+  margin-top: 50px;
+}
+
+.game-return {
+  text-align: center;
+}
+
+.search {
+  text-align: center;
+}
+
+.no-resize {
+  max-width: 300px;
+  ma-height: 300px;
+}
+
+.hidden {
+  display: none;
+}
+
+.game-selected {
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #6E32B2;
+}
+.btn-large {
+  padding: 8px 18px;
+    font-size: 10px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+/*
+<div class="form-buttons col-xs-5">
+    <select class="form col-xs-2">Genre
+        <option value="fps">FPS</option>
+        <option value ="Story">Fantastic Story</option>
+        <option value="fps">MMORPG</option>
+        <option value="fps">Puzzle</option>
+        <option value="fps">Other</option>
+        <option value="fps">Random</option>
+    </select>
+</div>
+<select class="form col-xs-1">Platform
+    <option value="fps">Nintendo</option>
+    <option value ="Story">Xbox One</option>
+    <option value="fps">PS4</option>
+    <option value="fps">Computer</option>
+</select>*/
