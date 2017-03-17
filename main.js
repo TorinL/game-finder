@@ -9,20 +9,28 @@ function getGameData(searchString) {
 }
 
 function buildCards(cardData) {
-  console.log(cardData)
+  $('.blah-city').empty()
+
   for (var i = 0; i < cardData.results.length; i++) {
     let $gameResults = $('<div class="game-results col-xs-3">')
     let $gameImage = $('<div class="game-image">')
-    let $anchor = $('<a href="page.html"></a>')
     let $noResize = $(`<img id="${i}" class="no-resize" src="${cardData.results[i].image.medium_url}" />`)
 
     $gameResults.append($gameImage)
-    $gameImage.append($anchor)
-    $anchor.append($noResize)
+    $gameImage.append($noResize)
 
     $('.blah-city').append($gameResults);
   }
+  $('.blah-city').on('click', 'img', function(){
+    $('blah-town').empty()
+    let gameId = $(this).attr('id')
+    let gameInfo = cardData.results[gameId].description
+
+    $('.blah-town').append(gameInfo)
+  })
 }
+
+
 
 $('form').submit(function(e) {
   e.preventDefault()
@@ -37,20 +45,3 @@ $('form').submit(function(e) {
       console.log('Error: ', error)
     })
 });
-
-//build the function to bring in all the infor for a game
-//buildthe jQuery call to run it on click of image
-
-// function callInfo() {
-//   $.ajax({
-//     url: 'https://galvanize-student-apis.herokuapp.com/gcommerce/products',
-//     method: 'GET'
-//     }).then(function (response) {
-//     console.log(response.length)
-//     console.log(response)
-//     }).catch(function (error) {
-//     console.log('error', error);
-//   })
-// }
-// $('.form-control').on('click', )
-// $('.blah-city').on('click', )
